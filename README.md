@@ -3,7 +3,7 @@ http缓存
 强制缓存
 协商缓存
 
-
+----------
 ### Jquery中$(document).ready()的作用类似于传统JavaScript中的window.onload方法，不过与window.onload方法还是有区别的。 ####
 
 1.执行时间 
