@@ -21,7 +21,7 @@ http缓存
          window.onload没有简化写法 
          $(document).ready(function(){})可以简写成$(function(){});
 ----------
-三个简单实用的用于 DOM 操作的 jQuery 方法：
-text() - 设置或返回所选元素的文本内容
-html() - 设置或返回所选元素的内容（包括 HTML 标记）
-val() - 设置或返回表单字段的值
+三个简单实用的用于 DOM 操作的 jQuery 方法：<br>
+text() - 设置或返回所选元素的文本内容<br>
+html() - 设置或返回所选元素的内容（包括 HTML 标记）<br>
+val() - 设置或返回表单字段的值<br>
