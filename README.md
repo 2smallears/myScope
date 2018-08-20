@@ -4,7 +4,7 @@ http缓存
 协商缓存
 
 ----------
-### Jquery中$(document).ready()的作用类似于传统JavaScript中的window.onload方法，不过与window.onload方法还是有区别的。 ####
+#### Jquery中$(document).ready()的作用类似于传统JavaScript中的window.onload方法，不过与window.onload方法还是有区别的。 ####
 
 1.执行时间 
 
@@ -27,11 +27,17 @@ html() - 设置或返回所选元素的内容（包括 HTML 标记）<br>
 val() - 设置或返回表单字段的值<br>
 
 ----------
-### setTimeout(0)
-场景：当浏览器尺寸发生变化时（window.onresize）、当某个标签样式为动态时
-问题：使用jQuery给div设置宽高不奏效
-解决方法：setTimeout(fn, 0, false);（fn为设置宽高的函数）
-实现原理：
+#### setTimeout(0)
+场景：当浏览器尺寸发生变化时（window.onresize）、当某个标签样式为动态时<br>
+问题：使用jQuery给div设置宽高报错<br>
+原因：DOM还没有渲染完<br>
+解决方法：setTimeout(fn, 0, false);（fn为设置宽高的函数）<br>
+实现原理：<br>
 
 ----------
-### jQuery对象和DOM对象
+#### jQuery对象和DOM对象
+场景：使用ng-repeat实现多条对话的展示，动态改变其展开/收起按钮的宽高<br>
+问题:使用jQuery设置宽高报错<br>
+原因：jquery对象不能使用dom的方法，dom对象不能使用jquery方法<br>
+解决方法：使用query对象转换成一个dom对象的方法：[index]和get(index)<br>
+
