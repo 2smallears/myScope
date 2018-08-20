@@ -21,7 +21,17 @@ http缓存
          window.onload没有简化写法 
          $(document).ready(function(){})可以简写成$(function(){});
 ----------
-三个简单实用的用于 DOM 操作的 jQuery 方法：<br>
+#### 三个简单实用的用于 DOM 操作的 jQuery 方法：<br>
 text() - 设置或返回所选元素的文本内容<br>
 html() - 设置或返回所选元素的内容（包括 HTML 标记）<br>
 val() - 设置或返回表单字段的值<br>
+
+----------
+### setTimeout(0)
+场景：当浏览器尺寸发生变化时（window.onresize）、当某个标签样式为动态时
+问题：使用jQuery给div设置宽高不奏效
+解决方法：setTimeout(fn, 0, false);（fn为设置宽高的函数）
+实现原理：
+
+----------
+### jQuery对象和DOM对象
