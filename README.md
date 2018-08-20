@@ -41,3 +41,6 @@ val() - 设置或返回表单字段的值<br>
 原因：jquery对象不能使用dom的方法，dom对象不能使用jquery方法<br>
 解决方法：使用query对象转换成一个dom对象的方法：[index]和get(index)<br>
 
+----------
+### 文件下载
+<a>http://www.cnblogs.com/voiphudong/p/3284724.html</a>
